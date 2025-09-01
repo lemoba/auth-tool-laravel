@@ -1,0 +1,38 @@
+{
+    "name": "auth-tool-laravel",
+    "description": "PHP tool for API authentication with signature and nonce using Redis",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "ext-hash": "*",
+        "ext-json": "*",
+        "predis/predis": "^3.2",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AuthTool\\AuthToolServiceProvider"
+            ],
+            "aliases": {
+                "AuthTool": "AuthTool\\Facades\\AuthTool"
+            }
+        }
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpAuthTool\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ranen",
+            "email": "ranen1024@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
