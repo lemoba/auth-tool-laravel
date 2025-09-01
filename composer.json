@@ -1,5 +1,5 @@
 {
-    "name": "auth-tool-laravel",
+    "name": "lemoba/auth-tool-laravel",
     "description": "PHP tool for API authentication with signature and nonce using Redis",
     "type": "library",
     "require": {
