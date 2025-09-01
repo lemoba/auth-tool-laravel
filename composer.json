@@ -12,7 +12,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AuthTool\\AuthToolServiceProvider"
+                "PhpAuthTool\\AuthToolServiceProvider"
             ],
             "aliases": {
                 "AuthTool": "AuthTool\\Facades\\AuthTool"
